@@ -1,0 +1,13 @@
+{
+  "facebook-login": {
+    "provider": "facebook",
+    "module": "passport-facebook",
+    "clientID": "501078773433794",
+    "clientSecret": "ad50987f2d6eba460cf0a4f1b6b9976b",
+    "callbackURL": "/auth/facebook/callback",
+    "callbackPath": "/auth/facebook/callback",
+    "authPath": "/auth/facebook",
+    "successRedirect": "https://www.cloudgulp.com/dashboard/home",
+    "scope": ["email", "public_profile"]
+  }
+}
