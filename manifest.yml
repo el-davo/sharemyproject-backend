@@ -1,0 +1,6 @@
+name: sharemyproject-backend
+instances: 1
+memory: 128M
+buildpack: nodejs_buildpack
+env:
+    NODE_ENV: production
