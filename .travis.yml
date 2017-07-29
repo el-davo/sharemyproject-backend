@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "7"
+
+install:
+  - yarn
+  - yarn run lint
+
+cache:
+  yarn: true
