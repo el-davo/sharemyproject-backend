@@ -44,5 +44,9 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "me": {
+    "dataSource": null,
+    "public": true
   }
 }
