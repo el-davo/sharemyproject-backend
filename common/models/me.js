@@ -7,7 +7,6 @@ module.exports = Me => {
       let UserModel = Me.app.models.User;
       let UserIdentityModel = Me.app.models.UserIdentity;
       UserModel.findById(accesstoken.userId, (error, user) => {
-
         if (error) {
           return next(error);
         }
