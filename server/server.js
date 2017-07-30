@@ -33,7 +33,7 @@ boot(app, __dirname, function(err) {
 // Load the provider configurations
 let config = {};
 try {
-  config = require('../providers.json');
+  config = require('../providers');
 } catch (err) {
   console.error('Please configure your passport strategy in `providers.json`.');
   process.exit(1);
