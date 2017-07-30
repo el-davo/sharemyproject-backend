@@ -12,7 +12,7 @@ module.exports = {
     callbackURL: '/auth/facebook/callback',
     callbackPath: '/auth/facebook/callback',
     authPath: '/auth/facebook',
-    successRedirect: 'http://localhost:3000',
+    successRedirect: 'https://sharemyproject-backend.cfapps.io/',
     scope: ['email', 'public_profile'],
     profileFields: ['gender', 'locale', 'name', 'timezone', 'email', 'picture'],
   },
