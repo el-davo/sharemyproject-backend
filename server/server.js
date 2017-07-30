@@ -1,20 +1,20 @@
 'use strict';
 
-var loopback = require('loopback');
-var boot = require('loopback-boot');
-var PassportConfigurator = require('loopback-component-passport').PassportConfigurator;
+let loopback = require('loopback');
+let boot = require('loopback-boot');
+let PassportConfigurator = require('loopback-component-passport').PassportConfigurator;
 
-var app = module.exports = loopback();
-var passportConfigurator = new PassportConfigurator(app);
+let app = module.exports = loopback();
+let passportConfigurator = new PassportConfigurator(app);
 
 app.start = function() {
   // start the web server
   return app.listen(function() {
     app.emit('started');
-    var baseUrl = app.get('url').replace(/\/$/, '');
+    let baseUrl = app.get('url').replace(/\/$/, '');
     console.log('Web server listening at: %s', baseUrl);
     if (app.get('loopback-component-explorer')) {
-      var explorerPath = app.get('loopback-component-explorer').mountPath;
+      let explorerPath = app.get('loopback-component-explorer').mountPath;
       console.log('Browse your REST API at %s%s', baseUrl, explorerPath);
     }
   });
@@ -31,7 +31,7 @@ boot(app, __dirname, function(err) {
 });
 
 // Load the provider configurations
-var config = {};
+let config = {};
 try {
   config = require('../providers.json');
 } catch (err) {
@@ -45,11 +45,11 @@ passportConfigurator.init();
 passportConfigurator.setupModels({
   userModel: app.models.user,
   userIdentityModel: app.models.userIdentity,
-  userCredentialModel: app.models.userCredential
+  userCredentialModel: app.models.userCredential,
 });
 // Configure passport strategies for third party auth providers
-for (var s in config) {
-  var c = config[s];
+for (let s in config) {
+  let c = config[s];
   c.session = c.session !== false;
   passportConfigurator.configureProvider(s, c);
 }

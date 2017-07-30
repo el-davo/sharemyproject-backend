@@ -1,12 +1,21 @@
 'use strict';
 
 module.exports = Me => {
-
-  Me.me = function (req, next) {
+  Me.me = (req, next) => {
     let AccessToken = Me.app.models.AccessToken;
     AccessToken.findForRequest(req, {},  (aux, accesstoken) => {
       let UserModel = Me.app.models.User;
-      UserModel.findById(accesstoken.userId, next);
+      let UserIdentityModel = Me.app.models.UserIdentity;
+      UserModel.findById(accesstoken.userId, (error, user) => {
+
+        if (error) {
+          return next(error);
+        }
+
+        UserIdentityModel.findById(accesstoken.userId, (error, identity) => {
+          next(error, {user, identity});
+        });
+      });
     });
   };
 

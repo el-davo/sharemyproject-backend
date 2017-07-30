@@ -2,12 +2,13 @@
   "facebook-login": {
     "provider": "facebook",
     "module": "passport-facebook",
-    "clientID": "501078773433794",
-    "clientSecret": "ad50987f2d6eba460cf0a4f1b6b9976b",
+    "clientID": "852913708158335",
+    "clientSecret": "65c6dd5ea4bc2d661205e4a0d8a319f8",
     "callbackURL": "/auth/facebook/callback",
     "callbackPath": "/auth/facebook/callback",
     "authPath": "/auth/facebook",
     "successRedirect": "http://localhost:3000",
-    "scope": ["email", "public_profile"]
+    "scope": ["email", "public_profile"],
+    "profileFields": ["gender", "locale", "name", "timezone", "email", "picture"]
   }
 }
