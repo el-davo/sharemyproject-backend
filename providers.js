@@ -1,9 +1,9 @@
 'use strict';
 
-const FACEBOOK_CLIENTID = process.env.facebookClientId;
-const FACEBOOK_CLIENT_SECRET = process.env.facebookClientSecret;
-const GITHUB_CLIENT_ID = process.env.githubCLientId;
-const GITHUB_CLIENT_SECRET = process.env.githubClientSecret;
+const FACEBOOK_CLIENTID = process.env.facebookClientId || 'test';
+const FACEBOOK_CLIENT_SECRET = process.env.facebookClientSecret || 'test';
+const GITHUB_CLIENT_ID = process.env.githubCLientId || 'test';
+const GITHUB_CLIENT_SECRET = process.env.githubClientSecret || 'test';
 
 module.exports = {
   facebook: {
