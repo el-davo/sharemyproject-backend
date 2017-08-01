@@ -23,7 +23,7 @@ module.exports = {
     module: 'passport-github',
     clientID: GITHUB_CLIENT_ID,
     clientSecret: GITHUB_CLIENT_SECRET,
-    callbackURL: '/auth/github/callback',
+    callbackURL: 'https://sharemyproject-backend.cfapps.io/auth/github/callback',
     authPath: '/auth/github',
     successRedirect: '/client/auth.html'
   }
