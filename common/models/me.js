@@ -23,7 +23,7 @@ module.exports = Me => {
     {
       accepts: {arg: 'req', type: 'object', http: {source: 'req'}},
       returns: {arg: 'user', type: 'object'},
-      http: {path: '/', verb: 'get'},
+      http: {path: '/', verb: 'get'}
     }
   );
 };

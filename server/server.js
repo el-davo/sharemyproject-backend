@@ -46,7 +46,7 @@ passportConfigurator.init();
 passportConfigurator.setupModels({
   userModel: app.models.user,
   userIdentityModel: app.models.userIdentity,
-  userCredentialModel: app.models.userCredential,
+  userCredentialModel: app.models.userCredential
 });
 // Configure passport strategies for third party auth providers
 for (let s in config) {
