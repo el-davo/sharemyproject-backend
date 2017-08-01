@@ -6,7 +6,7 @@ const GITHUB_CLIENT_ID = process.env.githubCLientId;
 const GITHUB_CLIENT_SECRET = process.env.githubClientSecret;
 
 module.exports = {
-  'facebook-login': {
+  facebook: {
     provider: 'facebook',
     module: 'passport-facebook',
     clientID: FACEBOOK_CLIENTID,
