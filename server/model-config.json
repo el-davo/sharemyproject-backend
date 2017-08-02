@@ -48,5 +48,9 @@
   "me": {
     "dataSource": null,
     "public": true
+  },
+  "project": {
+    "dataSource": "db",
+    "public": true
   }
 }
