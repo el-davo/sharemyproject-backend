@@ -52,5 +52,9 @@
   "project": {
     "dataSource": "db",
     "public": true
+  },
+  "list": {
+    "dataSource": "db",
+    "public": true
   }
 }
