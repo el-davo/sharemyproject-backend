@@ -1,6 +1,6 @@
 {
-  "name": "list",
-  "plural": "lists",
+  "name": "listToLink",
+  "plural": "listsToLinks",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -12,35 +12,26 @@
       "type": "string",
       "defaultFn": "uuidv4"
     },
-    "userId": {
+    "linkId": {
       "type": "string",
       "required": true
     },
-    "name": {
+    "listId": {
       "type": "string",
-      "required": "true"
-    },
-    "description": {
-      "type": "String",
-      "required": "true"
-    },
-    "isPrivate": {
-      "type": "Boolean",
-      "default": true
+      "required": true
     }
   },
   "validations": [],
   "relations": {
-    "user": {
+    "link": {
       "type": "belongsTo",
-      "model": "user",
-      "foreignKey": "userId"
-    },
-    "links": {
-      "type": "hasMany",
       "model": "link",
-      "foreignKey": "linkId",
-      "through": "listToLink"
+      "foreignKey": "linkId"
+    },
+    "list": {
+      "type": "belongsTo",
+      "model": "list",
+      "foreignKey": "listId"
     }
   },
   "acls": [

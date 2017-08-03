@@ -60,5 +60,9 @@
   "list": {
     "dataSource": "db",
     "public": true
+  },
+  "listToLink": {
+    "dataSource": "db",
+    "public": true
   }
 }
