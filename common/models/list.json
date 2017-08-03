@@ -12,6 +12,10 @@
       "type": "string",
       "defaultFn": "uuid"
     },
+    "userId": {
+      "type": "string",
+      "required": true
+    },
     "name": {
       "type": "string",
       "required": "true"
@@ -29,11 +33,11 @@
   "relations": {
     "user": {
       "type": "belongsTo",
-      "model": "User"
+      "model": "user"
     },
-    "projects": {
+    "links": {
       "type": "hasMany",
-      "model": "project"
+      "model": "link"
     }
   },
   "acls": [

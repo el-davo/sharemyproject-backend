@@ -45,11 +45,15 @@
     "dataSource": "db",
     "public": false
   },
+  "user": {
+    "dataSource": "db",
+    "public": true
+  },
   "me": {
     "dataSource": null,
     "public": true
   },
-  "project": {
+  "link": {
     "dataSource": "db",
     "public": true
   },

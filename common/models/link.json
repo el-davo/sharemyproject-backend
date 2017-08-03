@@ -1,6 +1,6 @@
 {
-  "name": "project",
-  "plural": "projects",
+  "name": "link",
+  "plural": "links",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -11,6 +11,10 @@
       "id": true,
       "type": "string",
       "defaultFn": "uuid"
+    },
+    "userId": {
+      "type": "string",
+      "required": true
     },
     "name": {
       "type": "string",
@@ -32,7 +36,7 @@
   "relations": {
     "user": {
       "type": "belongsTo",
-      "model": "User"
+      "model": "user"
     }
   },
   "acls": [
