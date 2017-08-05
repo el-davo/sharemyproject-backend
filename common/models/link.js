@@ -14,7 +14,6 @@ module.exports = Link => {
   });
 
   Link.validatesLengthOf('description', {
-    min: 1,
     max: 500,
     message: {
       min: 'Description is to short',
