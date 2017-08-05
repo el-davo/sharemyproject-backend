@@ -4,6 +4,7 @@
     "comma-dangle": [
       "error",
       "never"
-    ]
+    ],
+    "max-len": [0]
   }
 }
