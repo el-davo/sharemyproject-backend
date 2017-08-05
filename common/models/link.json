@@ -18,14 +18,15 @@
     },
     "name": {
       "type": "string",
-      "required": "true"
+      "required": true
     },
     "url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
       "type": "String",
-      "required": "true"
+      "required": false
     },
     "isPrivate": {
       "type": "Boolean",
