@@ -12,7 +12,6 @@ module.exports = List => {
   });
 
   List.validatesLengthOf('description', {
-    min: 1,
     max: 500,
     message: {
       min: 'Description is to short',
