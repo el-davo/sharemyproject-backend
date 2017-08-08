@@ -64,5 +64,8 @@
   "listToLink": {
     "dataSource": "db",
     "public": true
+  },
+  "search": {
+    "public": true
   }
 }
