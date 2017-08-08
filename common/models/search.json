@@ -1,0 +1,13 @@
+{
+  "name": "search",
+  "base": "Model",
+  "plural": "search",
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ]
+}
