@@ -1,7 +1,7 @@
 'use strict';
 
-const FACEBOOK_CLIENTID = process.env.facebookClientId || 'test';
-const FACEBOOK_CLIENT_SECRET = process.env.facebookClientSecret || 'test';
+const FACEBOOK_CLIENTID = process.env.facebookClientId || '1423622971026380';
+const FACEBOOK_CLIENT_SECRET = process.env.facebookClientSecret || '0035340aef243b62d7565fde65bba18d';
 const GITHUB_CLIENT_ID = process.env.githubCLientId || 'test';
 const GITHUB_CLIENT_SECRET = process.env.githubClientSecret || 'test';
 
