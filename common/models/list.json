@@ -51,6 +51,13 @@
       "permission": "DENY"
     },
     {
+      "property": "find",
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
       "accessType": "*",
       "principalType": "ROLE",
       "principalId": "$authenticated",
