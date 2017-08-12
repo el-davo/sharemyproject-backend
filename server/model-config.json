@@ -66,6 +66,11 @@
     "public": true
   },
   "search": {
+    "dataSource": false,
+    "public": true
+  },
+  "userIdentityPublic": {
+    "dataSource": false,
     "public": true
   }
 }

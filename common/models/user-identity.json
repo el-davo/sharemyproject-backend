@@ -2,13 +2,27 @@
   "name": "userIdentity",
   "plural": "userIdentities",
   "base": "UserIdentity",
-  "properties": {},
+  "properties": {
+    "id": {
+      "id": true,
+      "type": "string",
+      "defaultFn": "uuidv4"
+    }
+  },
   "validations": [],
   "relations": {
     "user": {
       "type": "belongsTo",
       "model": "user",
       "foreignKey": "userId"
+    },
+    "links": {
+      "type": "hasMany",
+      "model": "link"
+    },
+    "lists": {
+      "type": "hasMany",
+      "model": "list"
     }
   },
   "acls": [],

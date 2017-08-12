@@ -12,6 +12,10 @@
       "type": "string",
       "defaultFn": "uuidv4"
     },
+    "userId": {
+      "type": "string",
+      "required": true
+    },
     "linkId": {
       "type": "string",
       "required": true
@@ -23,6 +27,16 @@
   },
   "validations": [],
   "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": "userId"
+    },
+    "userIdentity": {
+      "type": "belongsTo",
+      "model": "userIdentity",
+      "foreignKey": "userId"
+    },
     "link": {
       "type": "belongsTo",
       "model": "link",

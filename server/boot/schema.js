@@ -19,8 +19,6 @@ module.exports = app => {
         password: 'testpassword',
         emailVerified: true
       }
-    ], (err) => {
-      if (err) throw err;
-    });
+    ]);
   }
 };

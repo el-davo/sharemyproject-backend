@@ -3,7 +3,7 @@
 module.exports = Me => {
   Me.me = (req, next) => {
     let AccessToken = Me.app.models.AccessToken;
-    AccessToken.findForRequest(req, {},  (aux, accesstoken) => {
+    AccessToken.findForRequest(req, {}, (aux, accesstoken) => {
       let UserModel = Me.app.models.User;
       let UserIdentityModel = Me.app.models.UserIdentity;
       UserModel.findById(accesstoken.userId, (error, user) => {
@@ -11,7 +11,7 @@ module.exports = Me => {
           return next(error);
         }
 
-        UserIdentityModel.findById(accesstoken.userId, (error, identity) => {
+        UserIdentityModel.findOne({where: {userId: accesstoken.userId}}, (error, identity) => {
           next(error, {user, identity});
         });
       });

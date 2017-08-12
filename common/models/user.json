@@ -6,6 +6,11 @@
     "validateUpsert": true
   },
   "properties": {
+    "id": {
+      "id": true,
+      "type": "string",
+      "defaultFn": "uuidv4"
+    },
     "username": {
       "type": "string",
       "required": true

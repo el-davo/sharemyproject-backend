@@ -1,0 +1,13 @@
+{
+  "name": "userIdentityPublic",
+  "base": "Model",
+  "plural": "userIdentityPublic",
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ]
+}
