@@ -12,6 +12,10 @@
       "type": "string",
       "defaultFn": "uuidv4"
     },
+    "createdAt":{
+      "type" : "date",
+      "defaultFn": "now"
+    },
     "userId": {
       "type": "string",
       "required": true
