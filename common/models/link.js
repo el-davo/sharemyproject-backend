@@ -26,11 +26,11 @@ module.exports = Link => {
   Link.observe('before save', function updateTimestamp(ctx, next) {
     if (ctx.instance) {
       if (!ctx.instance.url.match(/^[a-zA-Z]+:\/\//)) {
-        ctx.instance.url = `http://${ctx.instance.url}`
+        ctx.instance.url = `http://${ctx.instance.url}`;
       }
     } else {
       if (!ctx.data.url.match(/^[a-zA-Z]+:\/\//)) {
-        ctx.data.url = `http://${ctx.data.url}`
+        ctx.data.url = `http://${ctx.data.url}`;
       }
     }
     next();
