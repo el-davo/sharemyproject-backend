@@ -33,18 +33,15 @@
   "relations": {
     "user": {
       "type": "belongsTo",
-      "model": "user",
-      "foreignKey": "userId"
+      "model": "user"
     },
     "link": {
       "type": "belongsTo",
-      "model": "link",
-      "foreignKey": "linkId"
+      "model": "link"
     },
     "list": {
       "type": "belongsTo",
-      "model": "list",
-      "foreignKey": "listId"
+      "model": "list"
     }
   },
   "acls": [
