@@ -6,7 +6,7 @@
     "id": {
       "id": true,
       "type": "string",
-      "defaultFn": "uuidv4"
+      "defaultFn": "uuid"
     },
     "createdAt": {
       "type": "date",

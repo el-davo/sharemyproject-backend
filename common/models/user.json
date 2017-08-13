@@ -9,7 +9,7 @@
     "id": {
       "id": true,
       "type": "string",
-      "defaultFn": "uuidv4"
+      "defaultFn": "uuid"
     },
     "username": {
       "type": "string",
