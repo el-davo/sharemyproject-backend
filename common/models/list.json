@@ -40,11 +40,6 @@
       "model": "user",
       "foreignKey": "userId"
     },
-    "userIdentity": {
-      "type": "belongsTo",
-      "model": "userIdentity",
-      "foreignKey": "userId"
-    },
     "links": {
       "type": "hasMany",
       "model": "link",
