@@ -42,7 +42,6 @@
     "links": {
       "type": "hasMany",
       "model": "link",
-      "foreignKey": "linkId",
       "through": "listToLink"
     }
   },
