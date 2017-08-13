@@ -3,7 +3,7 @@
 module.exports = Search => {
   Search.search = (term, next) => {
     let list = Search.app.models.list;
-    list.find({limit: 10, where: {name: {ilike: `${term}`}, isPrivate: false}}, (err, lists) => {
+    list.find({limit: 10, where: {name: {ilike: term}, isPrivate: false}}, (err, lists) => {
       if (err) {
         return next(err);
       }
