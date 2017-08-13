@@ -12,13 +12,19 @@ module.exports = app => {
   function createBootstrapUsers() {
     let user = app.models.user;
 
-    user.create([
-      {
-        username: 'test',
-        email: 'test6@test.com',
-        password: 'testpassword',
-        emailVerified: true
+    user.findOne({where: {username: 'test'}}, (error, response) => {
+      if (response) {
+        return;
       }
-    ]);
+
+      user.create([
+        {
+          username: 'test',
+          email: 'test6@test.com',
+          password: 'testpassword',
+          emailVerified: true
+        }
+      ]);
+    });
   }
 };
