@@ -3,6 +3,7 @@
   "plural": "links",
   "base": "PersistedModel",
   "idInjection": true,
+  "forceId": true,
   "options": {
     "validateUpsert": true
   },
