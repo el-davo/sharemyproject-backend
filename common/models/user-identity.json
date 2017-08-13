@@ -19,14 +19,6 @@
       "type": "belongsTo",
       "model": "user",
       "foreignKey": "userId"
-    },
-    "links": {
-      "type": "hasMany",
-      "model": "link"
-    },
-    "lists": {
-      "type": "hasMany",
-      "model": "list"
     }
   },
   "acls": [],
