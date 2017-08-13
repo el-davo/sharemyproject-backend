@@ -3,7 +3,6 @@
   "plural": "links",
   "base": "PersistedModel",
   "idInjection": true,
-  "forceId": true,
   "options": {
     "validateUpsert": true
   },
@@ -11,7 +10,8 @@
     "id": {
       "id": true,
       "type": "string",
-      "defaultFn": "uuid"
+      "defaultFn": "uuid",
+      "generated": true
     },
     "createdAt":{
       "type" : "date",
