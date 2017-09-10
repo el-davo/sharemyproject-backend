@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
+"@linkcouch/screenshots@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@linkcouch/screenshots/-/screenshots-1.0.0.tgz#b17949928200085a9efa3bd2665a7cd60bb368bb"
+  dependencies:
+    request "^2.81.0"
+
 JSONStream@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/JSONStream/-/JSONStream-1.0.3.tgz#728544189438b7b9dd2184392581861ebabd9621"
@@ -2005,7 +2011,7 @@ rechoir@^0.6.2:
   dependencies:
     resolve "^1.1.6"
 
-request@^2.55.0:
+request@^2.55.0, request@^2.81.0:
   version "2.81.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.81.0.tgz#c6928946a0e06c5f8d6f8a9333469ffda46298a0"
   dependencies:
