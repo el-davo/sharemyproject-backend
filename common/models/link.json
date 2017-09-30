@@ -12,8 +12,8 @@
       "type": "string",
       "defaultFn": "uuid"
     },
-    "createdAt":{
-      "type" : "date",
+    "createdAt": {
+      "type": "date",
       "defaultFn": "now"
     },
     "userId": {
@@ -27,6 +27,9 @@
     "url": {
       "type": "string",
       "required": true
+    },
+    "imageLocation": {
+      "type": "string"
     },
     "description": {
       "type": "String",
