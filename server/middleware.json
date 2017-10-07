@@ -42,7 +42,7 @@
   },
   "files": {
     "loopback#static": {
-      "paths": "/client",
+      "paths": "/linkcouch-api/client",
       "params": "$!../client"
     }
   },

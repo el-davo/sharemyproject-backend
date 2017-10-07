@@ -11,10 +11,10 @@ module.exports = {
     module: 'passport-facebook',
     clientID: FACEBOOK_CLIENTID,
     clientSecret: FACEBOOK_CLIENT_SECRET,
-    callbackURL: '/auth/facebook/callback',
-    callbackPath: '/auth/facebook/callback',
-    authPath: '/auth/facebook',
-    successRedirect: '/client/auth.html',
+    callbackURL: '/linkcouch-api/auth/facebook/callback',
+    callbackPath: '/linkcouch-api/auth/facebook/callback',
+    authPath: '/linkcouch-api/auth/facebook',
+    successRedirect: '/linkcouch-api/client/auth.html',
     scope: ['email', 'public_profile'],
     profileFields: ['gender', 'locale', 'name', 'timezone', 'email', 'picture']
   },
@@ -24,8 +24,8 @@ module.exports = {
     clientID: GITHUB_CLIENT_ID,
     clientSecret: GITHUB_CLIENT_SECRET,
     callbackURL: 'https://linkcouch-backend.cfapps.io/auth/github/callback',
-    authPath: '/auth/github',
-    successRedirect: '/client/auth.html'
+    authPath: '/linkcouch-api/auth/github',
+    successRedirect: '/linkcouch-api/client/auth.html'
   }
 };
 
